@@ -1,6 +1,6 @@
-const data = require('./data')
-const SFSArea = function(){
 
+export default function(){
+    const data = require('./data')
     this.province = data['province_list']
     this.city = data['city_list']
     this.county = data['county_list']
@@ -41,6 +41,3 @@ const SFSArea = function(){
         return 0;
     }
 }
-
-export default SFSArea
-
