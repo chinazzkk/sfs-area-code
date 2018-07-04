@@ -1,10 +1,8 @@
-
-export default function(){
-    const data = require('./data')
+import data from '../dist/data.json'
+const SFSArea = function(){
     this.province = data['province_list']
     this.city = data['city_list']
     this.county = data['county_list']
-
     this.getList = function(type, code) {
         let result = [];
         if (type !== 'province' && !code) {
@@ -28,7 +26,7 @@ export default function(){
         }
         return result;
     }
-
+    // 获取索引位置
     this.getIndex = function(type, code) {
         const compareNum = type === 'province' ? 2 : type === 'city' ? 4 : 6;
         const list = this.getList(type, code.slice(0, compareNum - 2));
@@ -41,3 +39,4 @@ export default function(){
         return 0;
     }
 }
+export default new SFSArea()
