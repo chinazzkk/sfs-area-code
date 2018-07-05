@@ -1,6 +1,6 @@
 {
-  "name": "sfs-china-area",
-  "version": "1.0.3",
+  "name": "sfs-area-code",
+  "version": "1.0.0",
   "description": "let's easy get china area",
   "main": "index.js",
   "scripts": {

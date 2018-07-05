@@ -4,11 +4,11 @@
 前两位是省/直辖市,第三四位是市,四五位是区。
 
 NPM安装：
-    npm install sfs-china-area
+    npm install sfs-area-code
     
 或yarn：
 
-    yarn add sfs-china-area
+    yarn add sfs-area-code
 
 使用示例：
 
@@ -20,7 +20,9 @@ NPM安装：
     const province = TEST.getList('province')
     //返回 [{name:'北京',code:'110000'}]
     
-    // 获取所有省 例如获取北京 110000 上一级代码会返回这个邮编code
+    // 获取所有城市 
+    // 例如获取北京 110000 
+    // 上一级代码会返回这个邮编code
     const city = TEST.getList('city','110000')
     
     // 获取所有区
